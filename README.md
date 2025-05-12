@@ -1,4 +1,3 @@
 ### Termux neofetch theme
 
-![Image](https://github.com/user-attachments/assets/0c88b6c6-48a8-44b6-bd4d-433f8a223fb8)
-
+![Image](https://github.com/user-attachments/assets/de92fb33-bec7-4351-bf35-0d1a24e243a0)
