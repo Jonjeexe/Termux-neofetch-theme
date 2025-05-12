@@ -49,3 +49,6 @@ bash Theme
 
 ### Neofetch themes
 1. Arch linux
+![Image](https://github.com/user-attachments/assets/a2db3961-5d89-4424-b506-81cebb46b0dc)
+
+2. Ubuntu
