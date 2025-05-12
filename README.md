@@ -14,8 +14,8 @@
 ### Installation
 
 1. Update termux packages 
-``bash1
-pkg update && upgrade ``
+```bash1
+pkg update && upgrade ```
 
 
 2. Install git to clone the GitHub repo
