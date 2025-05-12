@@ -55,3 +55,12 @@ bash Theme
 ![Image](https://github.com/user-attachments/assets/0a602eda-bc09-4363-8a6f-d71d347a2ce0)
 
 3. `KALI LINUX`
+![Image](https://github.com/user-attachments/assets/25e1b02a-7842-4861-9467-b70133e6b8a2)
+
+4. `DRAGONFLY`
+
+5. `VENOM`
+
+6. `XFERIENCE`
+
+7. `WINDOWS10`
