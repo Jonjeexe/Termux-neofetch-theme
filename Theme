@@ -44,6 +44,8 @@ banner() {
                                               echo -e "\e[96m   [\033[0m5\e[96m]\e[92m PATCH TO VENOM         "
                                               echo -e "\e[96m   [\033[0m6\e[96m]\e[92m PATCH TO XFERIENCE          "
                                               echo -e "\e[96m   [\033[0m7\e[96m]\e[92m PATCH TO WINDOWS10             "
+                                              echo ""
+                                              echo -e "\e[96m   [\033[0m8\e[96m]\e[92m SAVE AND EXIT    "
                                               echo -e "\e[96m"
                                               echo -n "[?] ENTER THEME NUMBER : "
                                               read num
@@ -63,7 +65,7 @@ banner() {
                                                fi
                                                
                                                # Settings Arch
-                                               sed -i "s/^$KEY=\"auto\"$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
+                                               sed -i "s/^$KEY=.*$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
                                                
                                                # FRONT
                                                echo -n "   [?]  Do you want to install in-build front ? [y/n]  "
@@ -132,7 +134,8 @@ banner() {
                                                fi
                                                
                                                # Settings Arch
-                                               sed -i "s/^$KEY=\"auto\"$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
+                                               sed -i "s/^$KEY=.*$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
+                                               
                                                
                                                # FRONT
                                                echo -n "   [?]  Do you want to install in-build front ? [y/n]  "
@@ -200,7 +203,7 @@ banner() {
                                                fi
                                                
                                                # Settings Arch
-                                               sed -i "s/^$KEY=\"auto\"$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
+                                               sed -i "s/^$KEY=.*$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
                                                
                                                # FRONT
                                                echo -n "   [?]  Do you want to install in-build front ? [y/n]  "
@@ -268,7 +271,7 @@ banner() {
                                                fi
                                                
                                                # Settings Arch
-                                               sed -i "s/^$KEY=\"auto\"$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
+                                               sed -i "s/^$KEY=.*$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
                                                
                                                # FRONT
                                                echo -n "   [?]  Do you want to install in-build front ? [y/n]  "
@@ -335,7 +338,7 @@ banner() {
                                                fi
                                                
                                                # Settings Arch
-                                               sed -i "s/^$KEY=\"auto\"$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
+                                               sed -i "s/^$KEY=.*$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
                                                
                                                # FRONT
                                                echo -n "   [?]  Do you want to install in-build front ? [y/n]  "
@@ -402,7 +405,7 @@ banner() {
                                                fi
                                                
                                                # Settings Arch
-                                               sed -i "s/^$KEY=\"auto\"$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
+                                               sed -i "s/^$KEY=.*$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
                                                
                                                # FRONT
                                                echo -n "   [?]  Do you want to install in-build front ? [y/n]  "
@@ -469,7 +472,7 @@ banner() {
                                                fi
                                                
                                                # Settings Arch
-                                               sed -i "s/^$KEY=\"auto\"$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
+                                               sed -i "s/^$KEY=.*$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
                                                
                                                # FRONT
                                                echo -n "   [?]  Do you want to install in-build front ? [y/n]  "
@@ -522,8 +525,13 @@ banner() {
                                                
                                                clear;;
                                                
+                                              8) echo ;
+                                                     termux-reload-settings
+                                                     exit 1
+                                                clear;;
+                                               
     # This for invalid Input
     *) clear; echo -e "\e[91m ! Invalid Input"; sleep 2; echo " ! BACK TO MENU"; sleep 2;;
  esac
 clear
-bash run.sh
+bash Theme
