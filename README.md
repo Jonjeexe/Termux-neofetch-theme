@@ -14,8 +14,9 @@
 ### Installation
 
 1. Update termux packages 
-```bash1
-pkg update && upgrade ```
+```bash
+pkg update && upgrade
+```
 
 _______________________________________
 
