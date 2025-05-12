@@ -31,6 +31,10 @@ pkg install git
 git clone https://github.com/Jonjeexe/Termux-neofetch-theme.git
 ```
 
+### Neofetch themes
+1. Arch linux
+
+
 
 4. Enter Theme directoratey 
 ```bash
