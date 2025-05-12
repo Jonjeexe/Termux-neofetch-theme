@@ -27,6 +27,7 @@ pkg install git```
 
 _______________________________________
 
+
 3. Clone the repository to your Termux environment 
 
    git clone https://github.com/Jonjeexe/Termux-neofetch-theme.git
