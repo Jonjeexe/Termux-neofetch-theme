@@ -22,8 +22,8 @@ _______________________________________
 
 
 2. Install git to clone the GitHub repo
-
-pkg install git
+```bash
+pkg install git```
 
 
 3. Clone the repository to your Termux environment 
