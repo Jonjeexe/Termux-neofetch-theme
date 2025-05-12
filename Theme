@@ -1,0 +1,122 @@
+# Termux neofetch theme 
+clear
+sleep 4
+if [ -e /data/data/com.termux/files/usr/bin/figlet ]; then
+          sleep 0.5
+      else 
+           pkg install figlet 
+                    
+           # CREATING BACKUP
+           cp -r /data/data/com.termux/files/usr/etc/bash.bashrc ~/Termux-neofetch-theme/neofetch
+           clear
+fi
+if [ -e /data/data/com.termux/files/usr/bin/neofetch ]; then
+          sleep 0.5
+        else
+          pkg install neofetch
+fi
+banner() {
+             TOOL="Theme"
+             echo -e "\e[96m"
+             figlet "$TOOL "
+}
+                  information() {
+                  
+                  echo -e "\e[96m   [\033[0m~\e[96m]\e[0m Termux Neofetch Theme "
+                  echo -e "\e[96m   [\033[0m~\e[96m]\e[0m Version 1.0"
+                  echo -e "\e[96m   [\033[0m~\e[96m]\e[0m Developer : @Jonjeexe"
+                  echo -e "\e[96m   [\033[0m~\e[96m]\e[0m Release   : Mon 12 - 05 - 25"
+                  echo""
+}    
+                                
+                                             banner
+                                             information
+                                              echo -e "\e[96m   [\033[0m1\e[96m]\e[92m PATCH TO ARCH"
+                                              echo -e "\e[96m   [\033[0m2\e[96m]\e[92m PERFORMANCE "
+                                              echo -e "\e[96m   [\033[0m3\e[96m]\e[92m RAM BOOSTER "
+                                              echo -e "\e[96m   [\033[0m4\e[96m]\e[92m COLORFULL         "
+                                              echo -e "\e[96m   [\033[0m5\e[96m]\e[92m COLORFULL         "
+                                              echo -e "\e[96m   [\033[0m6\e[96m]\e[92m THERMAL            "
+                                              echo -e "\e[96m   [\033[0m7\e[96m]\e[92m THERMAL             "
+                                              echo -e "\e[96m"
+                                              echo -n "[?] ENTER THEME NUMBER : "
+                                              read num
+                                              case $num in
+                                              
+                                              1) echo "";
+                                              CONFIG_FILE="/data/data/com.termux/files/home/.config/neofetch/config.conf"
+                                              KEY="ascii_distro"
+                                              NEW_VALUE="arch"
+                                              
+                                               if [ -e /data/data/com.termux/files/usr/bin/neofetch ]; then
+                                                                  echo -e "\e[96m   [\033[0m#\e[96m]\e[92m  Patching Termux theme into $NEW_VALUE"
+                                                                  sleep 0.5
+                                                         else
+                                                                  echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  Extracting additional Files"
+                                                                  install_neofetch;
+                                                                  sleep 5
+                                                                  echo -e "\e[96m   [\033[0m#\e[96m]\e[92m  Patching Termux theme into $NEW_VALUE"
+                                                                  sleep 0.5
+                                               fi
+                                               
+                                               # Settings Arch
+                                               sed -i "s/^$KEY=\"auto\"$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
+                                               
+                                               # FRONT
+                                               echo -n "   [?]  Do you want to install in-build front ? [y/n]  "
+                                               read -r response
+
+                                               case "$response" in
+                                               [yY]) 
+                                               echo -e "\e[96m   [\033[0m#\e[96m]\e[92m  Installing in-build front "
+                                               sleep 2
+                                                ;;
+                                              [nN]) 
+                                              echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  Skip in-build front !"
+                                              sleep 2
+                                               ;;
+                                              esac
+                                              
+                                              # SET USERNAME IN THE PROMPT 
+                                              echo "" > /data/data/com.termux/files/usr/etc/motd
+                                              echo -n "   [?]  Please enter your username  :  "
+                                              read -r username
+
+                                             if [ -z "$username" ]; then
+                                                      echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  Input is empty setting by default !"
+                                                      
+                                                      # Start writing 
+                                                      cp ~/Termux-neofetch-theme/neofetch/bash.bashrc /data/data/com.termux/files/usr/etc/
+                                                      echo "neofetch" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+                                                      echo "alias whoami='echo unknown'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+                                                      echo "export export PS1='\e[92mUnknown\e[96m@Linux\[\e[m\]:\[\e[34m\]\w\[\e[m\]\$ '" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+                                                      echo "alias clear='clear && echo -e neofetch'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+                                                  else
+                                                      echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  user input the $username "
+                                                                                       
+                                                      # Start writing 
+                                                      cp /data/data/com.termux/files/home/Termux-neofetch-theme/bash.bashrc /data/data/com.termux/files/usr/etc/
+                                                      echo "neofetch" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+                                                      echo "alias whoami='echo $username'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+                                                      echo "export export PS1='\e[92m$username\e[96m@Linux\[\e[m\]:\[\e[34m\]\w\[\e[m\]\$ '" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+                                                      echo "alias clear='clear && neofetch'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+                                             fi
+                                              
+                                               # Verifiy the settings
+                                               if grep -q "^$KEY=\"$NEW_VALUE\"" "$CONFIG_FILE"; then
+                                                                  echo -e "\e[96m   [\033[0m√\e[96m]\e[92m  Termux neofetch $NEW_VALUE theme is successfully installed"
+                                                                  sleep 2
+                                                             else
+                                                                  echo -e "\e[96m   [\033[0m!\e[96m]\e[92m Failed to install Termux neofetch $NEW_VALUE !"        
+                                                                  sleep 4
+                                               fi
+                                               
+                                               clear;;
+                                         
+                                                                            
+    
+    # This for invalid Input
+    *) clear; echo -e "\e[91m ! Invalid Input"; sleep 2; echo " ! BACK TO MENU"; sleep 2;;
+ esac
+clear
+bash run.sh
