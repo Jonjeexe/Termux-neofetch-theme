@@ -64,7 +64,7 @@ bash Theme
 ![Image](https://github.com/user-attachments/assets/d2b1e81c-3ce6-416e-986a-9a7ad2e85ca7)
 
 6. `XFERIENCE`
-![Image](https://github.com/user-attachments/assets/45be75a0-847b-451b-82aa-e59935c21a43)
+![Image](https://github.com/user-attachments/assets/32276b32-a878-478a-80d7-cffd4622b625)
 
 8. `WINDOWS10`
 ![Image](https://github.com/user-attachments/assets/45be75a0-847b-451b-82aa-e59935c21a43)
