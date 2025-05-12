@@ -66,5 +66,5 @@ bash Theme
 6. `XFERIENCE`
 ![Image](https://github.com/user-attachments/assets/45be75a0-847b-451b-82aa-e59935c21a43)
 
-7. `WINDOWS10`
+8. `WINDOWS10`
 ![Image](https://github.com/user-attachments/assets/45be75a0-847b-451b-82aa-e59935c21a43)
