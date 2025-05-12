@@ -11,6 +11,8 @@
 <p>A lightweight and customizable Neofetch theme for Termux, designed to enhance your terminal's visual appeal with clean and modern system info displays.
 </p>
 
+---
+
 ### Installation
 
 1. Update termux packages 
@@ -31,10 +33,6 @@ pkg install git
 git clone https://github.com/Jonjeexe/Termux-neofetch-theme.git
 ```
 
-### Neofetch themes
-1. Arch linux
-
-
 
 4. Enter Theme directoratey 
 ```bash
@@ -46,3 +44,8 @@ cd Termux-neofetch-theme
 ```bash
 bash Theme
 ```
+
+---
+
+### Neofetch themes
+1. Arch linux
