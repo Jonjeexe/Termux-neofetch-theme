@@ -15,7 +15,9 @@
 
 1. Update termux packages 
 ```bash1
-pkg update && upgrade 
+pkg update && upgrade ```
+
+_______________________________________
 
 
 2. Install git to clone the GitHub repo
