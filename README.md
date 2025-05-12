@@ -15,24 +15,24 @@
 
 1. Update termux packages 
 ```bash1
-pkg update && upgrade ```
+pkg update && upgrade 
 
 
 2. Install git to clone the GitHub repo
-``bash2
-pkg install git``
+
+pkg install git
 
 
 3. Clone the repository to your Termux environment 
-``bash3
+
    git clone https://github.com/Jonjeexe/Termux-neofetch-theme.git
-``
+
 
 4. Enter Theme directoratey 
-``bash4
-cd Termux-neofetch-theme``
+
+cd Termux-neofetch-theme
 
 
 5. Start theme tool
-``bash5
-bash Theme``
+
+bash Theme
