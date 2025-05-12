@@ -5,7 +5,8 @@ if [ -e /data/data/com.termux/files/usr/bin/figlet ]; then
           
       else 
            pkg install figlet 
-                    
+           pkg install wget
+            
            # CREATING BACKUP
            cp -r /data/data/com.termux/files/usr/etc/bash.bashrc /data/data/com.termux/files/usr/etc/bash.bashrc.bak
            clear
@@ -68,16 +69,18 @@ banner() {
                                                sed -i "s/^$KEY=.*$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
                                                
                                                # FRONT
-                                               echo -n "   [?]  Do you want to install in-build front ? [y/n]  "
+                                               echo -n "   [?]  Do you want to install HurmitNerdFontMono front ? [y/n]  "
                                                read -r response
 
                                                case "$response" in
                                                [yY]) 
-                                               echo -e "\e[96m   [\033[0m#\e[96m]\e[92m  Installing in-build front "
+                                               echo -e "\e[96m   [\033[0m#\e[96m]\e[92m  Installing HurmitNerdFontMono front "
+                                               mkdir -p ~/.termux
+                                               wget -O ~/.termux/font.ttf https://github.com/ryanoasis/nerd-fonts/raw/v3.0.2/patched-fonts/Hermit/Regular/HurmitNerdFontMono-Regular.otf 
                                                sleep 2
                                                 ;;
                                               [nN]) 
-                                              echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  Skip in-build front !"
+                                              echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  Skip HurmitNerdFontMono front !"
                                               sleep 2
                                                ;;
                                               esac
@@ -96,6 +99,8 @@ banner() {
                                                       echo "alias whoami='echo unknown'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                                       echo "export export PS1='\e[92mUnknown\e[96m@Linux\[\e[m\]:\[\e[34m\]\w\[\e[m\]\$ '" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                                       echo "alias clear='clear && echo -e neofetch'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+                                                      
+                                                      
                                                   else
                                                       echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  user input the $username "
                                                                                        
@@ -105,6 +110,7 @@ banner() {
                                                       echo "alias whoami='echo $username'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                                       echo "export export PS1='\e[92m$username\e[96m@Linux\[\e[m\]:\[\e[34m\]\w\[\e[m\]\$ '" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                                       echo "alias clear='clear && neofetch'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+                                                      echo "alias whoami='echo $username'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                              fi
                                               
                                                # Verifiy the settings
@@ -138,16 +144,18 @@ banner() {
                                                
                                                
                                                # FRONT
-                                               echo -n "   [?]  Do you want to install in-build front ? [y/n]  "
+                                               echo -n "   [?]  Do you want to install HurmitNerdFontMono front ? [y/n]  "
                                                read -r response
 
                                                case "$response" in
                                                [yY]) 
-                                               echo -e "\e[96m   [\033[0m#\e[96m]\e[92m  Installing in-build front "
+                                               echo -e "\e[96m   [\033[0m#\e[96m]\e[92m  Installing HurmitNerdFontMono front "
+                                               mkdir -p ~/.termux
+                                               wget -O ~/.termux/font.ttf https://github.com/ryanoasis/nerd-fonts/raw/v3.0.2/patched-fonts/Hermit/Regular/HurmitNerdFontMono-Regular.otf                             
                                                sleep 2
                                                 ;;
                                               [nN]) 
-                                              echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  Skip in-build front !"
+                                              echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  Skip HurmitNerdFontMono front !"
                                               sleep 2
                                                ;;
                                               esac
@@ -175,6 +183,7 @@ banner() {
                                                       echo "alias whoami='echo $username'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                                       echo "export export PS1='\e[92m$username\e[96m@Linux\[\e[m\]:\[\e[34m\]\w\[\e[m\]\$ '" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                                       echo "alias clear='clear && neofetch'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+                                                      echo "alias whoami='echo $username'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                              fi
                                               
                                                # Verifiy the settings
@@ -206,16 +215,19 @@ banner() {
                                                sed -i "s/^$KEY=.*$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
                                                
                                                # FRONT
-                                               echo -n "   [?]  Do you want to install in-build front ? [y/n]  "
+                                               echo -n "   [?]  Do you want to install HurmitNerdFontMono front ? [y/n]  "
                                                read -r response
 
                                                case "$response" in
                                                [yY]) 
-                                               echo -e "\e[96m   [\033[0m#\e[96m]\e[92m  Installing in-build front "
+                                               echo -e "\e[96m   [\033[0m#\e[96m]\e[92m  Installing HurmitNerdFontMono front "
+                                               mkdir -p ~/.termux
+                                               wget -O ~/.termux/font.ttf https://github.com/ryanoasis/nerd-fonts/raw/v3.0.2/patched-fonts/Hermit/Regular/HurmitNerdFontMono-Regular.otf 
+                                             
                                                sleep 2
                                                 ;;
                                               [nN]) 
-                                              echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  Skip in-build front !"
+                                              echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  Skip HurmitNerdFontMono front !"
                                               sleep 2
                                                ;;
                                               esac
@@ -243,6 +255,7 @@ banner() {
                                                       echo "alias whoami='echo $username'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                                       echo "export export PS1='\e[92m$username\e[96m@Linux\[\e[m\]:\[\e[34m\]\w\[\e[m\]\$ '" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                                       echo "alias clear='clear && neofetch'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+                                                      echo "alias whoami='echo $username'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                              fi
                                               
                                                # Verifiy the settings
@@ -274,16 +287,19 @@ banner() {
                                                sed -i "s/^$KEY=.*$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
                                                
                                                # FRONT
-                                               echo -n "   [?]  Do you want to install in-build front ? [y/n]  "
+                                               echo -n "   [?]  Do you want to install HurmitNerdFontMono front ? [y/n]  "
                                                read -r response
 
                                                case "$response" in
                                                [yY]) 
-                                               echo -e "\e[96m   [\033[0m#\e[96m]\e[92m  Installing in-build front "
+                                               echo -e "\e[96m   [\033[0m#\e[96m]\e[92m  Installing HurmitNerdFontMono front "
+                                               mkdir -p ~/.termux
+                                               wget -O ~/.termux/font.ttf https://github.com/ryanoasis/nerd-fonts/raw/v3.0.2/patched-fonts/Hermit/Regular/HurmitNerdFontMono-Regular.otf 
+                                               
                                                sleep 2
                                                 ;;
                                               [nN]) 
-                                              echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  Skip in-build front !"
+                                              echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  Skip HurmitNerdFontMono front !"
                                               sleep 2
                                                ;;
                                               esac
@@ -311,6 +327,7 @@ banner() {
                                                       echo "alias whoami='echo $username'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                                       echo "export export PS1='\e[92m$username\e[96m@Linux\[\e[m\]:\[\e[34m\]\w\[\e[m\]\$ '" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                                       echo "alias clear='clear && neofetch'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+                                                      echo "alias whoami='echo $username'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                              fi
                                               
                                                # Verifiy the settings
@@ -341,16 +358,19 @@ banner() {
                                                sed -i "s/^$KEY=.*$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
                                                
                                                # FRONT
-                                               echo -n "   [?]  Do you want to install in-build front ? [y/n]  "
+                                               echo -n "   [?]  Do you want to install HurmitNerdFontMono front ? [y/n]  "
                                                read -r response
 
                                                case "$response" in
                                                [yY]) 
-                                               echo -e "\e[96m   [\033[0m#\e[96m]\e[92m  Installing in-build front "
+                                               echo -e "\e[96m   [\033[0m#\e[96m]\e[92m  Installing HurmitNerdFontMono front "
+                                               mkdir -p ~/.termux
+                                               wget -O ~/.termux/font.ttf https://github.com/ryanoasis/nerd-fonts/raw/v3.0.2/patched-fonts/Hermit/Regular/HurmitNerdFontMono-Regular.otf 
+                                               
                                                sleep 2
                                                 ;;
                                               [nN]) 
-                                              echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  Skip in-build front !"
+                                              echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  Skip HurmitNerdFontMono front !"
                                               sleep 2
                                                ;;
                                               esac
@@ -378,6 +398,7 @@ banner() {
                                                       echo "alias whoami='echo $username'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                                       echo "export export PS1='\e[92m$username\e[96m@Linux\[\e[m\]:\[\e[34m\]\w\[\e[m\]\$ '" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                                       echo "alias clear='clear && neofetch'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+                                                      echo "alias whoami='echo $username'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                              fi
                                               
                                                # Verifiy the settings
@@ -408,16 +429,19 @@ banner() {
                                                sed -i "s/^$KEY=.*$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
                                                
                                                # FRONT
-                                               echo -n "   [?]  Do you want to install in-build front ? [y/n]  "
+                                               echo -n "   [?]  Do you want to install HurmitNerdFontMono front ? [y/n]  "
                                                read -r response
 
                                                case "$response" in
                                                [yY]) 
-                                               echo -e "\e[96m   [\033[0m#\e[96m]\e[92m  Installing in-build front "
+                                               echo -e "\e[96m   [\033[0m#\e[96m]\e[92m  Installing HurmitNerdFontMono front "
+                                               mkdir -p ~/.termux
+                                               wget -O ~/.termux/font.ttf https://github.com/ryanoasis/nerd-fonts/raw/v3.0.2/patched-fonts/Hermit/Regular/HurmitNerdFontMono-Regular.otf 
+                                               
                                                sleep 2
                                                 ;;
                                               [nN]) 
-                                              echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  Skip in-build front !"
+                                              echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  Skip HurmitNerdFontMono front !"
                                               sleep 2
                                                ;;
                                               esac
@@ -445,6 +469,7 @@ banner() {
                                                       echo "alias whoami='echo $username'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                                       echo "export export PS1='\e[92m$username\e[96m@Linux\[\e[m\]:\[\e[34m\]\w\[\e[m\]\$ '" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                                       echo "alias clear='clear && neofetch'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+                                                      echo "alias whoami='echo $username'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                              fi
                                               
                                                # Verifiy the settings
@@ -475,16 +500,19 @@ banner() {
                                                sed -i "s/^$KEY=.*$/$KEY=\"$NEW_VALUE\"/" "$CONFIG_FILE"
                                                
                                                # FRONT
-                                               echo -n "   [?]  Do you want to install in-build front ? [y/n]  "
+                                               echo -n "   [?]  Do you want to install HurmitNerdFontMono front ? [y/n]  "
                                                read -r response
 
                                                case "$response" in
                                                [yY]) 
-                                               echo -e "\e[96m   [\033[0m#\e[96m]\e[92m  Installing in-build front "
+                                               echo -e "\e[96m   [\033[0m#\e[96m]\e[92m  Installing HurmitNerdFontMono front "
+                                               mkdir -p ~/.termux
+                                               wget -O ~/.termux/font.ttf https://github.com/ryanoasis/nerd-fonts/raw/v3.0.2/patched-fonts/Hermit/Regular/HurmitNerdFontMono-Regular.otf 
+                                              
                                                sleep 2
                                                 ;;
                                               [nN]) 
-                                              echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  Skip in-build front !"
+                                              echo -e "\e[96m   [\033[0m!\e[96m]\e[92m  Skip HurmitNerdFontMono front !"
                                               sleep 2
                                                ;;
                                               esac
@@ -512,6 +540,7 @@ banner() {
                                                       echo "alias whoami='echo $username'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                                       echo "export export PS1='\e[92m$username\e[96m@Linux\[\e[m\]:\[\e[34m\]\w\[\e[m\]\$ '" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                                       echo "alias clear='clear && neofetch'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
+                                                      echo "alias whoami='echo $username'" >> /data/data/com.termux/files/usr/etc/bash.bashrc
                                              fi
                                               
                                                # Verifiy the settings
