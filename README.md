@@ -58,9 +58,10 @@ bash Theme
 ![Image](https://github.com/user-attachments/assets/25e1b02a-7842-4861-9467-b70133e6b8a2)
 
 4. `DRAGONFLY`
+![Image](https://github.com/user-attachments/assets/f0c6a92b-b413-437a-bf31-b21d349e3075)
 
-5. `VENOM`
+6. `VENOM`
 
-6. `XFERIENCE`
+7. `XFERIENCE`
 
-7. `WINDOWS10`
+8. `WINDOWS10`
