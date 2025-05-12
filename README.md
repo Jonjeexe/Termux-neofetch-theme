@@ -70,4 +70,4 @@ bash Theme
 ![Image](https://github.com/user-attachments/assets/45be75a0-847b-451b-82aa-e59935c21a43)
 
 ### Donation 
-`If you like my work you can ` [Buymeacoffee](http://buymeacoffee.com/jonjeexey) ☕
+`[Buymeacoffee](http://buymeacoffee.com/jonjeexey) ☕ if you find my work helpful.
