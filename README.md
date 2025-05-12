@@ -61,10 +61,10 @@ bash Theme
 ![Image](https://github.com/user-attachments/assets/f0c6a92b-b413-437a-bf31-b21d349e3075)
 
 5. `VENOM`
-![Image](https://github.com/user-attachments/assets/d2b1e81c-3ce6-416e-986a-9a7ad2e85ca7
+![Image](https://github.com/user-attachments/assets/d2b1e81c-3ce6-416e-986a-9a7ad2e85ca7)
 
 6. `XFERIENCE`
-![Image]https://github.com/user-attachments/assets/45be75a0-847b-451b-82aa-e59935c21a43
+![Image](https://github.com/user-attachments/assets/45be75a0-847b-451b-82aa-e59935c21a43)
 
 7. `WINDOWS10`
 ![Image](https://github.com/user-attachments/assets/45be75a0-847b-451b-82aa-e59935c21a43)
