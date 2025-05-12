@@ -25,6 +25,7 @@ _______________________________________
 ```bash
 pkg install git```
 
+_______________________________________
 
 3. Clone the repository to your Termux environment 
 
