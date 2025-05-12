@@ -21,7 +21,7 @@ pkg update && upgrade
 ```
 
 
-2. Install git to clone the GitHub repo
+2. Install git to clone the GitHub repositorie
 ```bash
 pkg install git
 ```
@@ -34,13 +34,13 @@ git clone https://github.com/Jonjeexe/Termux-neofetch-theme.git
 ```
 
 
-4. Enter Theme directoratey 
+4. Enter Theme directory 
 ```bash
 cd Termux-neofetch-theme
 ```
 
 
-5. Start theme tool
+5. Run theme tool
 ```bash
 bash Theme
 ```
